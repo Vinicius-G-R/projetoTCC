@@ -5,11 +5,17 @@
 html, body{
     background: #F7F7F7;
 }
-.row{
-    margin: 0;
+/*Gradiente aplicado aos textos*/
+.gradiente, .section03 div span{
+    background: linear-gradient(to right, #27A9DB, #65EBB8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
 }
+/*--------- Seção 1 ---------*/
 .section01{
-    height: 440px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,13 +24,10 @@ html, body{
     background-size: cover;
     color: #fff;
 }
-
 .section01 h2{
     font-weight: 600;
 }
-.section01 h2 span{
-    color: #00ff44;
-}
+/*--------- Seção 2 ---------*/
 .section02 .container{
     display: flex;
     justify-content: space-between;
@@ -32,13 +35,21 @@ html, body{
 .section02 h2{
     margin: 0px;
     margin: 30px 0px 30px 0px;
-    color: #0A1D3E;
     font-weight: 600;
+    color: #0A1D3E;
 }
-
+.section02 a{
+    color: #0A1D3E;
+}
+.section02 a h4{
+    font-weight: 600;
+    
+}
+/*--------- Seção 3 ---------*/
 .section03{
     background: #0A1D3E;
     color: #F7F7F7;
+    min-height: 500px;
 }
 .section03 h2{
     margin: 50px 0px 50px 0px;
@@ -46,17 +57,34 @@ html, body{
     color: #F7F7F7;
     font-weight: 600;
 }
-.section03 div span{
-    color: #00ff44;
-}
 .section03 .row{
     margin: 0px;
     margin: auto;
 }
-
+/*Para aplicar quebra de texto no <p> dos profs*/
+.orient{
+    white-space: pre-line;
+}
+/*--------- Seção 4 ---------*/
 .section04{
-    height: 690px;
+    min-height: 450px;
     background: #DEF2F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+.section04 .referencia{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    background: #ffffff;
+    width: 60%;
+    padding: 5px 0px 5px 10px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 3px 0px #00000048;
+    font-weight: 600;
 }
 .section04 h2{
     margin: 0px;
@@ -65,29 +93,42 @@ html, body{
     color: #0A1D3E;
     font-weight: 600;
 }
-
+/*--------- Seção 5 ---------*/
 .section05{
     height: 306px;
     background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.section05 .quad{
+.section05 i{
     margin: auto;
-    margin-top: 50px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 0px 50px #00000048;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
+    color: #27A9DB;
+    transition: .2s;
+}
+.section05  i:hover{
+    color: #fff;
+    background: #27A9DB;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px #27a8dba1;
 }
 .section05 h5{
     font-weight: 600;
 }
+.section05 a{
+    color: #141414;
+}
+/*--------- Rodapé ---------*/
 footer{
-    padding: 15px;
+    padding: 10px;
     background: #0A1D3E;
     color: #F7F7F7;
-}
-footer h6 span{
-    color: #00ff44;
 }
