@@ -30,6 +30,7 @@ html, body{
 /*--------- Seção 2 ---------*/
 .section02 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .section02 h2{
@@ -65,6 +66,11 @@ html, body{
 .orient{
     white-space: pre-line;
 }
+
+@media (max-width: 500px) {
+    .section03 {margin: 0; }
+    .section03 h4, .section03 p{text-align: center;} 
+} 
 /*--------- Seção 4 ---------*/
 .section04{
     min-height: 450px;
@@ -76,8 +82,10 @@ html, body{
 }
 .section04 .referencia{
     display: flex;
-    justify-content: baseline;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
     background: #ffffff;
     width: 60%;
     padding: 5px 0px 5px 10px;
@@ -85,6 +93,26 @@ html, body{
     border-radius: 5px;
     box-shadow: 1px 3px 3px 0px #00000048;
     font-weight: 600;
+}
+.textoT{
+    display: flex;
+}
+#textoT{
+    display: flex;
+}
+.textoR{
+    width: 100%;
+    word-wrap: break-word;
+    font-weight: 300;
+    transition: 0.3s;
+    display: none;
+}
+#textoR{
+    width: 100%;
+    word-wrap: break-word;
+    font-weight: 300;
+    transition: 0.3s;
+    display: none;
 }
 .section04 h2{
     margin: 0px;
