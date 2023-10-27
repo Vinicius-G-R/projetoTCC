@@ -1,11 +1,15 @@
-/*let iniciar = () => {
-    let textoT = document.getElementById("textoT");
-    let mostrarReferencia = () =>{
-        let textoR = getElementById("textoR");
-        textoR.style.display = 'hidden';
-    } 
+var coll = document.getElementsByClassName("textoT");
+var i;
 
-textoT.addEventListener("click", mostrarReferencia)
-};
-document.addEventListener('DOMContentLoaded', iniciar);
-*/
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
