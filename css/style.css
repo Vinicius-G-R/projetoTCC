@@ -13,8 +13,10 @@ header {
     color: #f1f1f1;
 }
 
-.conteudo {
-    padding: 15px;
+.container {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    justify-content: center;
 }
 
 .sticky {
@@ -23,14 +25,36 @@ header {
     width: 100%
 }
 
-.sticky+.conteudo {
+.sticky+.container {
     padding-top: 102px;
 }
 
-.container {
-    justify-content:center;
-  }
+.logo img {
+    max-width: 200px;
+    min-width: 50px;
+}
 
-.item { 
-    align-self: flex-end;
-  }
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons a {
+    margin-left: 20px;
+}
+
+.meuBotao {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    transition: color 0.5s;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.meuBotao:hover {
+    background: linear-gradient(to bottom, #10DBB6, #11AEDE);
+    color: #fff;
+}
