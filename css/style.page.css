@@ -1,20 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-    }
-    html, body{
+}
+
+html,
+body {
     background: #F7F7F7;
-    }
-    /*Gradiente aplicado aos textos*/
-    .gradiente, .section03 div span{
+}
+
+/*Gradiente aplicado aos textos*/
+.gradiente,
+.section03 div span {
     background: linear-gradient(to right, #27A9DB, #65EBB8);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-weight: 600;
-    }
-    /*--------- Seção 1 ---------*/
-    .section01{
+}
+
+/*--------- Seção 1 ---------*/
+.section01 {
     width: 100%;
     height: 400px;
     display: flex;
@@ -25,11 +30,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    }
-    .section01 h2{
+}
+
+.section01 h2 {
     font-weight: 600;
-    }
-    .section01 p{
+}
+
+.section01 p {
     text-align: center;
     width: 100px;
     padding: 5px 10px 5px 10px;
@@ -40,60 +47,72 @@
     font-weight: 600;
     cursor: pointer;
 }
-.section01 p a{
+
+.section01 p a {
     color: #fff;
 }
-.section01 p:hover{
+
+.section01 p:hover {
     border: none;
     background: linear-gradient(to right, #27A9DB, #65EBB8);
-    }
-    /*--------- Seção 2 ---------*/
-    .section02 .container{
+}
+
+/*--------- Seção 2 ---------*/
+.section02 .container {
     display: flex;
     justify-content: space-between;
-    }
-    .section02 h2{
+}
+
+.section02 h2 {
     margin: 0px;
     margin: 30px 0px 30px 0px;
     font-weight: 600;
     color: #0A1D3E;
-    }
-    .section02 a{
+}
+
+.section02 a {
     color: #0A1D3E;
-    }
-    .section02 a h4{
+}
+
+.section02 a h4 {
     font-weight: 600;
-    }
-    /*--------- Seção 3 ---------*/
-    .section03{
+}
+
+/*--------- Seção 3 ---------*/
+.section03 {
     background: #0A1D3E;
     color: #F7F7F7;
     min-height: 500px;
-    }
-    .section03 h2{
+}
+
+.section03 h2 {
     margin: 50px 0px 50px 0px;
     padding-top: 40px;
     color: #F7F7F7;
     font-weight: 600;
-    }
-    .section03 .row{
+}
+
+.section03 .row {
     margin: 0px;
     margin: auto;
-    }
-    /*Para aplicar quebra de texto no <p> dos profs*/
-    .orient{
+}
+
+/*Para aplicar quebra de texto no <p> dos profs*/
+.orient {
     white-space: pre-line;
-    }
-    /*--------- Seção 4 ---------*/
-    .section04{
+}
+
+/*--------- Seção 4 ---------*/
+.section04 {
     min-height: 450px;
     background: #DEF2F9;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
-    }
-    .section04 .referencia{
+}
+
+.section04 .referencia {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -108,42 +127,49 @@
     font-weight: 600;
     cursor: pointer;
     height: 100%;
-    }
-    .textoT{
+}
+
+.textoT {
     display: flex;
-    }
-    .textoR{
+}
+
+.textoR {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     word-wrap: break-word;
     text-align: left;
     width: 100%;
-    }
-    .section04 .referencia:hover{
+}
+
+.section04 .referencia:hover {
     transition: .3s;
     background: #0A1D3E;
     color: #fff;
-    }
-    #textoR{
+}
+
+#textoR {
     overflow: hidden;
-    }
-    .section04 h2{
+}
+
+.section04 h2 {
     margin: 0px;
     margin: 0px 0px 50px 0px;
     padding-top: 40px;
     color: #0A1D3E;
     font-weight: 600;
-    }
-    /*--------- Seção 5 ---------*/
-    .section05{
+}
+
+/*--------- Seção 5 ---------*/
+.section05 {
     height: 306px;
     background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-    .section05 i{
+}
+
+.section05 i {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -155,27 +181,31 @@
     height: 150px;
     color: #27A9DB;
     transition: .2s;
-    }
-    .section05 i:hover{
+}
+
+.section05 i:hover {
     color: #fff;
     background: #27A9DB;
     border-radius: 20px;
     box-shadow: 0px 0px 50px #27a8dba1;
-    }
-    .section05 h5{
+}
+
+.section05 h5 {
     font-weight: 600;
-    }
-    .section05 a{
+}
+
+.section05 a {
     color: #141414;
-    }
-    /*--------- Rodapé ---------*/
-    footer{
+}
+
+/*--------- Rodapé ---------*/
+footer {
     padding: 10px;
     background: #0A1D3E;
     color: #F7F7F7;
-    }
-    
-    .seta{
+}
+
+.seta {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -192,31 +222,40 @@
     opacity: 10;
     transition: all 0.35s ease-in-out;
     z-index: 20;
+}
+
+
+@media (max-width: 500px) {
+    .section02 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
+    .section02 img {
+        width: 100px;
+    }
 
-    @media (max-width: 500px) {
-        .section02 .container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .section02 img{
-            width: 100px;
-        }
-        h2 {
-            font-size: 2.5em;
-        }
-        .section02 h4{
-            margin: 0;
-        }
-        .section02 h5{
-            margin: 5px 0 15px 0;
-        }
-        .section03{
-            margin: 0; 
-        }
-        .section03 h4, .section03 p{
-            text-align: center;
-        }
-        }
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .section02 h4 {
+        margin: 0;
+    }
+
+    .section02 h5 {
+        margin: 5px 0 15px 0;
+    }
+
+    .section03 {
+        margin: 0;
+    }
+
+    .section03 h4,
+    .section03 p {
+        text-align: center;
+    }
+}
+
+/* Vinicius */
