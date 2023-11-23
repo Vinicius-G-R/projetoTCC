@@ -87,11 +87,29 @@ h1 {
 p {
     line-height: normal;
     font-style: normal;
-    font-weight: bold;
     text-align: left;
     max-width: 350px;
     font-size: 17px;
     color: white;
+}
+
+h2 {
+    word-wrap: break-word;
+    line-height: normal;
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    max-width: 40%;
+    color: black;
+}
+
+p1 {
+    line-height: normal;
+    font-style: normal;
+    text-align: left;
+    max-width: 350px;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
 }
 
 a{

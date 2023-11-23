@@ -39,10 +39,10 @@ body {
 .section01 p {
     text-align: center;
     width: 100px;
-    padding: 5px 10px 5px 10px;
+    padding: 10px 20px;
     margin: 5px 0px 5px 0px;
     border: 1px solid #fff;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 1px 3px 3px 0px #00000048;
     font-weight: 600;
     cursor: pointer;
