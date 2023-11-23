@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -16,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .sticky {
@@ -44,7 +49,7 @@ header {
     border-radius: 15px;
     padding: 10px 20px;
     background: none;
-    cursor:pointer;
+    cursor: pointer;
     font-size: 15px;
     color: white;
     border: none;
@@ -55,13 +60,13 @@ header {
     color: #fff;
 }
 
+.fundo {
+    background: #0a1d3e;
+}
+
 .Bloco01 {
-    background: url(../media/Rectangle15.png);
-    background-repeat: no-repeat;
-    justify-content: center;
-    background-size: cover;
-    margin-top: 80px;
-    height: 400px;
+    margin-top: 100px;
+    height: 300px;
     width: 100%;
 }
 
@@ -89,5 +94,12 @@ p {
     color: white;
 }
 
+a{
+    color: #fff;
+}
+
+#img-capa {
+    margin-top: 100px;
+}
 
 /* Nicolas */
